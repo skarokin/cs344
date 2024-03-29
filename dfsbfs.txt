@@ -1,0 +1,60 @@
+--- dfs ---
+found an edge from 0 to 1
+found an edge from 0 to 2
+found an edge from 0 to 3
+found an edge from 0 to 5
+stack:  [1, 2, 3, 5]
+found an edge from 5 to 3
+found an edge from 5 to 4
+found an edge from 5 to 6
+found an edge from 5 to 8
+stack:  [1, 2, 3, 3, 4, 6, 8]
+found an edge from 8 to 3
+found an edge from 8 to 6
+found an edge from 8 to 7
+stack:  [1, 2, 3, 3, 4, 6, 3, 6, 7]
+found an edge from 7 to 2
+found an edge from 7 to 6
+stack:  [1, 2, 3, 3, 4, 6, 3, 6, 2, 6]
+found an edge from 6 to 1
+found an edge from 6 to 4
+stack:  [1, 2, 3, 3, 4, 6, 3, 6, 2, 1, 4]
+found an edge from 4 to 1
+found an edge from 4 to 3
+stack:  [1, 2, 3, 3, 4, 6, 3, 6, 2, 1, 1, 3]
+found an edge from 3 to 2
+stack:  [1, 2, 3, 3, 4, 6, 3, 6, 2, 1, 1, 2]
+found an edge from 2 to 1
+stack:  [1, 2, 3, 3, 4, 6, 3, 6, 2, 1, 1, 1]
+stack:  [1, 2, 3, 3, 4, 6, 3, 6, 2, 1, 1]
+0==>5==>8==>7==>6==>4==>3==>2==>1==>
+--- bfs ---
+found an edge from 0 to 1
+found an edge from 0 to 2
+found an edge from 0 to 3
+found an edge from 0 to 5
+queue:  [1, 2, 3, 5]
+found an edge from 1 to 2
+found an edge from 1 to 4
+found an edge from 1 to 6
+queue:  [2, 3, 5, 2, 4, 6]
+found an edge from 2 to 3
+found an edge from 2 to 7
+queue:  [3, 5, 2, 4, 6, 3, 7]
+found an edge from 3 to 4
+found an edge from 3 to 5
+found an edge from 3 to 8
+queue:  [5, 2, 4, 6, 3, 7, 4, 5, 8]
+found an edge from 5 to 4
+found an edge from 5 to 6
+found an edge from 5 to 8
+queue:  [2, 4, 6, 3, 7, 4, 5, 8, 4, 6, 8]
+found an edge from 4 to 6
+queue:  [6, 3, 7, 4, 5, 8, 4, 6, 8, 6]
+found an edge from 6 to 7
+found an edge from 6 to 8
+queue:  [3, 7, 4, 5, 8, 4, 6, 8, 6, 7, 8]
+found an edge from 7 to 8
+queue:  [4, 5, 8, 4, 6, 8, 6, 7, 8, 8]
+queue:  [4, 6, 8, 6, 7, 8, 8]
+0==>1==>2==>3==>5==>4==>6==>7==>8==>
