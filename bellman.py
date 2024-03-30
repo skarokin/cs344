@@ -4,11 +4,12 @@ def bellman(G, s):
     iterations = 0
 
     # for each edge (u, v), calculate new distance to v. repeat V-1 times
-    for _ in range(len(G) - 1):  
+    for _ in range(len(G) - 1):
         print(f'iteration {iterations}: {dist.values()}')
         iterations += 1
         for node in G:
             for nbr in G[node]:
+                # we can only update the distance if the node is reachable from the start
                 if dist[node] != float('inf'):
                     weight = G[node][nbr]
                     dist[nbr] = min(dist[nbr], dist[node] + weight)
