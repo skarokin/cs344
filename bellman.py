@@ -8,7 +8,9 @@ def bellman(G, s):
         print(f'iteration {iterations}: {dist.values()}')
         iterations += 1
         for node in G:
+            print(f'node: {node}')
             for nbr in G[node]:
+                print(f'neighbor: {nbr}')
                 # we can only update the distance if the node is reachable from the start
                 if dist[node] != float('inf'):
                     weight = G[node][nbr]
